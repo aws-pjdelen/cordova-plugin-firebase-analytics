@@ -35,9 +35,9 @@ module.exports = {
             exec(resolve, reject, PLUGIN_NAME, "setEnabled", [enabled]);
         });
     },
-    setCurrentScreen: function(screenName, screenClass) {
+    setCurrentScreen: function(name) {
         return new Promise(function(resolve, reject) {
-            exec(resolve, reject, PLUGIN_NAME, "setCurrentScreen", [screenName, screenClass]);
+            exec(resolve, reject, PLUGIN_NAME, "setCurrentScreen", [name]);
         });
     },
     setDefaultEventParameters: function(defaults) {

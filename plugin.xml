@@ -90,10 +90,4 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             target-dir="src/by/chemerisuk/cordova/firebase/" />
     </platform>
 
-    <platform name="browser">
-        <js-module src="src/browser/FirebaseAnalyticsProxy.js" name="FirebaseAnalyticsProxy">
-            <runs />
-        </js-module>
-    </platform>
-
 </plugin>
