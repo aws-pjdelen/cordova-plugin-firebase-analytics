@@ -1,7 +1,34 @@
 {
-  "name": "cordova-plugin-firebase-analytics",
-  "version": "5.0.0",
-  "description": "Cordova plugin for Firebase Analytics",
+  "_from": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+  "_id": "cordova-plugin-firebase-analytics@4.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-firebase-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+    "rawSpec": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+    "saveSpec": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+    "fetchSpec": "https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git#15c89ae42d5191848efaf41fa5ec393bbe6a9f53",
+  "_spec": "git+https://github.com/aws-pjdelen/cordova-plugin-firebase-analytics.git",
+  "_where": "/Users/devjcommon/Documents/開発/Codes/almex-master",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-firebase-analytics",
     "platforms": [
@@ -9,17 +36,9 @@
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-analytics.git"
-  },
-  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics/issues"
-  },
+  "deprecated": false,
+  "description": "Cordova plugin for Firebase Analytics",
   "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics#readme",
-  "funding": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics?sponsor=1",
   "keywords": [
     "cordova",
     "firebase",
@@ -28,8 +47,15 @@
     "cordova-android",
     "cordova-ios"
   ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebase-analytics",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-analytics.git"
+  },
   "scripts": {
-    "version": "perl -p -i -e 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add plugin.xml",
-    "postversion": "git push && git push --tags"
-  }
+    "postversion": "git push && git push --tags",
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml"
+  },
+  "version": "4.0.1"
 }
